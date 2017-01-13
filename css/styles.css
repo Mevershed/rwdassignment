@@ -56,6 +56,10 @@ figure {
   z-index: 100;
 }
 
+.site-logo-image{
+  z-index: 101;
+}
+
 .site-nav {
   position: fixed;
   bottom: 0;
@@ -198,11 +202,29 @@ figure {
 @media (min-width:768px) {
     .site-nav{
       position: fixed;
-      left: 1px;
-      top: 30px;
+      width: 10%;
+      height: 100%;
+      padding: 100px 0;
+      z-index: 90;
     }
-    .site-nav-item{
+    .site-nav-list{
+      display: block;
+      z-index: 99;
+    }
+    .movie-overview{
       display: block;
     }
-
+    .site-nav-item{
+      clear:left;
+      margin: 10px 0;
+      width: 100%
+    }
+    .site-logo-image{
+      width: 50px;
+      z-index: 100;
+    }
+    main{
+      width: 90%;
+      float: right;
+    }
 }
